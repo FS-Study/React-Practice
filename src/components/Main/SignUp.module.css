@@ -1,5 +1,28 @@
+.signup {
+  margin: 0 20px;
+  padding: 20px;
+  width: 400px;
+}
+
 .trial {
+  width: 100%;
   background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.auth div input {
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.auth {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 span {
@@ -10,8 +33,28 @@ span {
   font-weight: bold;
 }
 
-.auth {
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
 }
 
-input {
+button {
+  margin: 10px 0;
+  background-color: hsl(154, 59%, 51%);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+a {
+  color: hsl(360, 100%, 74%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service {
+  color: #d3d3d3;
 }

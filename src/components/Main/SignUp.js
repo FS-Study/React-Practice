@@ -2,11 +2,11 @@ import classes from "./SignUp.module.css";
 
 const SignUp = () => {
   return (
-    <div>
-      <div className={classes.trial}>
+    <div className={classes.signup}>
+      <p className={classes.trial}>
         <span className={classes.bold}>Try it free 7 days </span>
         <span>then $20/mo.thereafter</span>
-      </div>
+      </p>
       <form className={classes.auth}>
         <div>
           <input type="text" placeholder="First Name"></input>
@@ -21,11 +21,13 @@ const SignUp = () => {
           <input type="Password" placeholder="Password"></input>
         </div>
         <button>CLAIM YOUR FREE TRIAL</button>
+        <div>
+          <span className={classes.service}>
+            By clicking the button, you are agreeing to our
+          </span>
+          <a href="/"> Terms of Service</a>
+        </div>
       </form>
-      <div>
-        <span>By clicking the button, you are agreeing to our</span>
-        <a href="/">Terms of Service</a>
-      </div>
     </div>
   );
 };
