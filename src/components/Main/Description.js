@@ -1,11 +1,10 @@
-import classes from "../Main/Description.module.css";
+import classes from "./Description.module.css";
 
 const Description = () => {
   return (
     <div className={classes.description}>
       <h1>
-        Learn to code by <br />
-        watching others
+        Learn to code by <br /> watching others
       </h1>
       <h5>
         See how experienced developers solve problems in real-time.

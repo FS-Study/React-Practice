@@ -2,10 +2,10 @@ import classes from "./SignUp.module.css";
 
 const SignUp = () => {
   return (
-    <div className={classes.signUp}>
+    <div className={classes.signup}>
       <p className={classes.trial}>
         <span className={classes.bold}>Try it free 7 days </span>
-        then $20/mo.thereafter
+        <span>then $20/mo.thereafter</span>
       </p>
       <form className={classes.auth}>
         <div>
@@ -21,11 +21,13 @@ const SignUp = () => {
           <input type="Password" placeholder="Password"></input>
         </div>
         <button>CLAIM YOUR FREE TRIAL</button>
+        <div>
+          <span className={classes.service}>
+            By clicking the button, you are agreeing to our
+          </span>
+          <a href="/"> Terms of Service</a>
+        </div>
       </form>
-      <div>
-        <span>By clicking the button, you are agreeing to our</span>
-        <a href="/">Terms of Service</a>
-      </div>
     </div>
   );
 };
