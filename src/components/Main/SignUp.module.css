@@ -1,17 +1,42 @@
+.signUp {
+    width: 400px;
+    margin: 0 20px;
+    padding: 20px;
+}
+
 .trial {
-  background-color: hsl(248, 32%, 49%);
-}
-
-span {
-  color: white;
-}
-
-.bold {
-  font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .auth {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
-input {
+.auth div input {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+p {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.auth {}
+
+input {}

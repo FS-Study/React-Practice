@@ -1,7 +1,12 @@
+import classes from "../Main/Description.module.css";
+
 const Description = () => {
   return (
-    <div>
-      <h1>Learn to code by watching others</h1>
+    <div className={classes.description}>
+      <h1>
+        Learn to code by <br />
+        watching others
+      </h1>
       <h5>
         See how experienced developers solve problems in real-time.
         <br />

@@ -2,11 +2,11 @@ import classes from "./SignUp.module.css";
 
 const SignUp = () => {
   return (
-    <div>
-      <div className={classes.trial}>
+    <div className={classes.signUp}>
+      <p className={classes.trial}>
         <span className={classes.bold}>Try it free 7 days </span>
-        <span>then $20/mo.thereafter</span>
-      </div>
+        then $20/mo.thereafter
+      </p>
       <form className={classes.auth}>
         <div>
           <input type="text" placeholder="First Name"></input>
