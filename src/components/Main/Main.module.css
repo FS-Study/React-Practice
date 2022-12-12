@@ -1,0 +1,8 @@
+.main {
+  background-color: hsl(360, 100%, 74%);
+  background-image: url("../../asset/bg-intro-desktop.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
