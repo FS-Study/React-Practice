@@ -2,11 +2,14 @@ import Description from "./Description";
 import classes from "./Main.module.css";
 import SignUp from "./SignUp";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div className={classes.main}>
       <Description />
-      <SignUp />
+      <SignUp
+        unShowTerm={props.unShowTerm}
+        unShowLoginResult={props.unShowLoginResult}
+      />
     </div>
   );
 };
