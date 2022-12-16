@@ -7,8 +7,8 @@ const Main = (props) => {
     <div className={classes.main}>
       <Description />
       <SignUp
-        unShowTerm={props.unShowTerm}
-        unShowLoginResult={props.unShowLoginResult}
+        onShowTerm={props.onShowTerm}
+        onShowLoginResult={props.onShowLoginResult}
       />
     </div>
   );

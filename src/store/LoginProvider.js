@@ -6,8 +6,17 @@ const defaultUserDataState = {
 };
 
 const userReducer = (state, action) => {
+  console.log("들엉모");
   if (action.type === "SHOW") {
-    return action.user;
+    console.log(action.user);
+    return {
+      userData: {
+        firstName: action.user.firstName,
+        lastName: action.user.lastName,
+        emailAddress: action.user.emailAddress,
+        password: action.user.password,
+      },
+    };
   }
   return state;
 };
