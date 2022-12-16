@@ -6,7 +6,6 @@ const defaultUserDataState = {
 };
 
 const userReducer = (state, action) => {
-  console.log("들엉모");
   if (action.type === "SHOW") {
     console.log(action.user);
     return {

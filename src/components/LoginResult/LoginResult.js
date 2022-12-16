@@ -4,7 +4,7 @@ import Modal from "../UI/Modal";
 
 const LoginResult = (props) => {
   const userCtx = useContext(LoginContext);
-  console.log(userCtx);
+
   return (
     <Modal>
       <ul>
