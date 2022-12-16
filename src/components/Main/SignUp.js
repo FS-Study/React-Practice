@@ -3,25 +3,18 @@ import { useRef, useContext } from "react";
 import LoginContext from "../../store/login-context";
 
 const SignUp = (props) => {
-  const termHandler = (event) => {
-    event.preventDefault();
-    props.onShowTerm();
-  };
-  const loginResultHandler = (event) => {
-    event.preventDefault();
-    props.onShowLoginResult();
-    userCtx.showUser({
-      firstName: fisrtNameRef.current.value,
-      lastName: lastNameRef.current.value,
-      emailAddress: emailAddressRef.current.value,
-      password: passwordRef.current.value,
-    });
-  };
+  const userCtx = useContext(LoginContext);
+
   const fisrtNameRef = useRef();
   const lastNameRef = useRef();
   const emailAddressRef = useRef();
   const passwordRef = useRef();
-  const userCtx = useContext(LoginContext);
+
+  const termHandler = (event) => {
+    event.preventDefault();
+    props.onShowTerm();
+  };
+
   const showUserHandler = (event) => {
     event.preventDefault();
     props.onShowLoginResult();
