@@ -5,11 +5,17 @@ import LoginContext from "../../store/login-context";
 const SignUp = (props) => {
   const termHandler = (event) => {
     event.preventDefault();
-    props.unShowTerm();
+    props.onShowTerm();
   };
   const loginResultHandler = (event) => {
     event.preventDefault();
-    props.unShowLoginResult();
+    props.onShowLoginResult();
+    userCtx.showUser({
+      firstName: fisrtNameRef.current.value,
+      lastName: lastNameRef.current.value,
+      emailAddress: emailAddressRef.current.value,
+      password: passwordRef.current.value,
+    });
   };
   const fisrtNameRef = useRef();
   const lastNameRef = useRef();
@@ -17,8 +23,11 @@ const SignUp = (props) => {
   const passwordRef = useRef();
   const userCtx = useContext(LoginContext);
   const showUserHandler = (event) => {
+    event.preventDefault();
+    props.onShowLoginResult();
+    console.log(fisrtNameRef.current.value);
     userCtx.showUser({
-      firstName: "하이",
+      firstName: fisrtNameRef.current.value,
       lastName: lastNameRef.current.value,
       emailAddress: emailAddressRef.current.value,
       password: passwordRef.current.value,
@@ -56,7 +65,7 @@ const SignUp = (props) => {
             placeholder="Password"
           ></input>
         </div>
-        <button onClick={loginResultHandler}>CLAIM YOUR FREE TRIAL</button>
+        <button>CLAIM YOUR FREE TRIAL</button>
         <div>
           <span className={classes.service}>
             By clicking the button, you are agreeing to our

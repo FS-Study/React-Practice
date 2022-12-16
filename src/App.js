@@ -23,8 +23,8 @@ function App() {
       {termIsShown && <TermCondition onClose={showTermHandler} />}
       {loginResultIsShown && <LoginResult onClose={showLoginResultHandler} />}
       <Main
-        unShowTerm={showTermHandler}
-        unShowLoginResult={showLoginResultHandler}
+        onShowTerm={showTermHandler}
+        onShowLoginResult={showLoginResultHandler}
       />
     </LoginProvider>
   );

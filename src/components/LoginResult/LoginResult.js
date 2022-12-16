@@ -2,17 +2,17 @@ import LoginContext from "../../store/login-context";
 import { useContext } from "react";
 import Modal from "../UI/Modal";
 
-const LoginResult = () => {
+const LoginResult = (props) => {
   const userCtx = useContext(LoginContext);
   console.log(userCtx);
   return (
     <Modal>
       <ul>
-        {userCtx.userData.map((user) => (
-          <li>{user.firstName}</li>
-        ))}
+        <li>{userCtx.userData.firstName}</li>
+        <li>{userCtx.userData.lastName}</li>
+        <li>{userCtx.userData.emailAddress}</li>
       </ul>
-      <button>Close</button>
+      <button onClick={props.onClose}>Close</button>
     </Modal>
   );
 };
